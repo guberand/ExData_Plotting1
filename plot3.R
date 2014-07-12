@@ -1,4 +1,4 @@
-##Course4-Exploratory Data Analysis ##plot3
+##Course4-Exploratory Data Analysis plot3
 
 ##Reading the txt file and tranforming it prior to plotting
 url<-"https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
@@ -13,7 +13,7 @@ electric2<-subset(electric1,Date=="1/2/2007" | Date=="2/2/2007",row.names=NULL)
 electric2$Date1<-paste(electric2$Date,electric2$Time,sep=" ")#combine Date and time to a single column
 electric2$Date1<-strptime(electric2$Date1,"%d/%m/%Y %H:%M:%S")# convert Date/time from character to Date-Time
 
-## plot 3
+## plot3
 par(mfrow=c(1,1))
 png(file="plot3.png",width=480,height=480,units="px")
 with(electric2,plot(Date1, as.double(Sub_metering_1),type="n",ylab="Energy sub metering",xlab=""))

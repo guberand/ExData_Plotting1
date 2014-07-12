@@ -1,4 +1,4 @@
-##Course4-Exploratory Data Analysis ##plot4
+##Course4-Exploratory Data Analysis plot4
 
 ##Reading the txt file and tranforming it prior to plotting
 url<-"https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
